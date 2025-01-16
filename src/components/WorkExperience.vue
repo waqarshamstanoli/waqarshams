@@ -31,8 +31,11 @@
 export default {
   data() {
     return {
-    experiences:[{company:'Shape Solutions', jobTitle:'Front End Developer', duration:'July 2022 - Present', description:' At Shape Solutions, we are not just in the business of providing IT services; we are architects of digital transformation, sculptors of cutting-edge solutions, and partners in your journey to success. With a commitment to innovation, excellence, and client satisfaction, we redefine possibilities and empower businesses to thrive in the digital age'}]
-    };
+      experiences:[{company:'Infini8AI', jobTitle:'Front End Developer', duration:'October 2021 - Present', description:' At Infini8AI, we are not just in the business of providing IT services; we are architects of digital transformation, sculptors of cutting-edge solutions, and partners in your journey to success. With a commitment to innovation, excellence, and client satisfaction, we redefine possibilities and empower businesses to thrive in the digital age'},
+    {company:'Financials Unlimited', jobTitle:'Vue JS Developer', duration:'November-2019 - September 2021', description:' At Financials Unlimited, we are not just in the business of providing IT services; we are architects of digital transformation, sculptors of cutting-edge solutions, and partners in your journey to success. With a commitment to innovation, excellence, and client satisfaction, we redefine possibilities and empower businesses to thrive in the digital age'},
+    {company:'Mount Fuji Textile', jobTitle:'Front End Developer', duration:'November-2018 - October 2019', description:' At Mount Fuji Textile, we are not just in the business of providing IT services; we are architects of digital transformation, sculptors of cutting-edge solutions, and partners in your journey to success. With a commitment to innovation, excellence, and client satisfaction, we redefine possibilities and empower businesses to thrive in the digital age'}
+
+    ]    };
   },
   methods: {
     
