@@ -9,13 +9,13 @@
       </v-col>
       <v-col cols="12">
         <vue-slick-carousel v-bind="slickOptions" >
-            <v-card v-for="(project, index) in projects" :key="index" rounded="lg" color="rgba(0,0,0,.1)" width="290px" class="mx-auto mt-8 elevation-0">
+            <v-card v-for="(project, index) in projects" :key="index" rounded="lg" color="transparent" width="290px" class="mx-auto mt-8 elevation-0">
               <v-card-text>
                 <h4 class="secondary--text text--h4 text-center mt-2">{{ project.projectName }}.</h4>
                 <v-img :src="project.projectImg" alt="" class="mt-8"> </v-img>
               </v-card-text>
               <v-card-actions>
-                <v-btn class="py-5 px-6 white--text text-capitalize subscribe-button mx-auto mb-4" > <a :href="project.projectLink">Details</a></v-btn>
+                <v-btn class="py-5 px-6 white--text text-capitalize subscribe-button mx-auto mb-4" > <a :href="project.projectLink">Live</a></v-btn>
               </v-card-actions>
             </v-card>
         </vue-slick-carousel>
@@ -36,7 +36,7 @@ export default {
   data() {
     return {
       slickOptions: {
-  slidesToShow: 3, // Number of slides to show at once
+  slidesToShow: 4, // Number of slides to show at once
   slidesToScroll: 1, // Number of slides to scroll at once
   autoplaySpeed: 2000, // Auto-play speed in milliseconds
   arrows: true, // Show navigation arrows
@@ -83,6 +83,10 @@ export default {
           projectDescription: "",
           projectLink: "https://www.bimmer-tech.net/",
         },
+        {projectName:'TECHBAR', projectImg:require("../assets/techbar.png"),projectDescription:'', projectLink:'https://admin-r2.techbar.com/auth/login'},
+         {projectName:'OPTIMUS HEALTH', projectImg:require("../assets/optimus.png"),projectDescription:'',projectLink:'https://www.myoptimushealth.com/'},
+        {projectName:'RESEARCH PAL', projectImg:require("../assets/research.png"),projectDescription:'',projectLink:'https://researchpal.co/'},
+        {projectName:'TALKITOUT', projectImg:require("../assets/talkit.png"),projectDescription:'',projectLink:'https://talkitout.ai/'},
 
         {
           projectName: "KAARKA",
@@ -174,10 +178,8 @@ export default {
           projectDescription: "",
           projectLink: "",
         },
-        // {projectName:'TASC', projectImg:'',projectDescription:''},
-        // {projectName:'SCRAM', projectImg:'',projectDescription:''},
-        // {projectName:'STABLE FUND', projectImg:'',projectDescription:''},
-        {projectName:'TECHBAR', projectImg:require("../assets/techbar.png"),projectDescription:'', projectLink:'https://admin-r2.techbar.com/auth/login'}
+       
+       
       ],
       projectDetails: false,
     };
